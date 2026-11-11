@@ -22,8 +22,8 @@
     <onload>SetProperty(TrailerFade,1,home)</onload>
     
     <!-- Set Trailer Path -->
-    <onload>SetProperty(TrailerPath,$INFO[ListItem.Trailer],home)</onload>
-    <onload>SetProperty(TrailerPath2,$INFO[ListItem.Trailer],home)</onload>
+    <onload>SetProperty(TrailerPath,$ESCINFO[ListItem.Trailer],home)</onload>
+    <onload>SetProperty(TrailerPath2,$ESCINFO[ListItem.Trailer],home)</onload>
     
     <!-- Start Trailer -->
     <onload>PlayMedia($ESCINFO[ListItem.Trailer],1)</onload> 

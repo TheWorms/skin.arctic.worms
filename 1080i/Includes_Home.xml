@@ -144,7 +144,7 @@
                     <width>100%</width>
                     <height>16</height>
                     <top>200</top>
-                    <texture flipy="false">common/shadow16B.png</texture>
+                    <texture flipy="false">common/shadow16b.png</texture>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Skin.HasSetting(no.homemenu.clear) + $EXP[HomeIsModernMultiWidgets]">Conditional</animation>
                 </control>
                 <control type="image" description="BottomBG">
@@ -270,7 +270,7 @@
             <include>Animation.FadeOut</include>
             <visible>!Control.HasFocus(301) | [Skin.HasSetting(home.classicwidgets) + !Skin.HasSetting(home.showheader)]</visible>
             <visible>Skin.HasSetting(home.showheader) | !Window.IsVisible(DialogNotification.xml)</visible>
-            <visible>Skin.HasSetting(home.showheader) | !Window.IsVisible(DialogExtendedProgress.xml)</visible>
+            <visible>Skin.HasSetting(home.showheader) | !Window.IsVisible(DialogExtendedProgressBar.xml)</visible>
             <visible>Skin.HasSetting(home.showheader) | !Window.IsVisible(DialogVolumeBar.xml)</visible>
             <animation effect="slide" end="0,100" time="150" condition="!Skin.HasSetting(home.showheader) + Player.HasMedia + !Skin.HasSetting(home.hide.nowplaying) + ![Skin.HasSetting(extended.nowplaying) + [$EXP[HomeIsModernMultiWidgets] | $EXP[HomeIsVerticalMultiWidgets]]]">Conditional</animation>
             <animation effect="slide" end="0,100" time="150" condition="!Skin.HasSetting(home.showheader) + Player.HasMedia + Window.IsVisible(DialogExtendedProgressBar.xml)">Conditional</animation>
@@ -1481,7 +1481,7 @@
                         <width>100%</width>
                         <height>16</height>
                         <bottom>220</bottom>
-                        <texture flipy="true">common/shadow16B.png</texture>
+                        <texture flipy="true">common/shadow16b.png</texture>
                         <animation effect="fade" start="100" end="25" time="0" condition="!Skin.HasSetting(no.homemenu.clear) + $EXP[HomeIsModernMultiWidgets]">Conditional</animation>
                     </control>
                     <control type="image" description="Shadow">
@@ -1820,7 +1820,7 @@
                         <width>100%</width>
                         <height>16</height>
                         <bottom>220</bottom>
-                        <texture flipy="true">common/shadow16B.png</texture>
+                        <texture flipy="true">common/shadow16b.png</texture>
                     </control>
                     <control type="image" description="Shadow">
                         <width>100%</width>

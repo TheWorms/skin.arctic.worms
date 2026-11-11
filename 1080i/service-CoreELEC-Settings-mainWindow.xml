@@ -801,7 +801,7 @@
                             <height>32</height>
                             <aspectratio>keep</aspectratio>
                             <visible>String.IsEqual(ListItem.Property(Paired), 1)</visible>
-                            <texture>icons/Favorite.png</texture>
+                            <texture>elec/favorites.png</texture>
                         </control>
                         <!-- Trusted Symbol (bottom right) -->
                         <control type="image">
@@ -986,7 +986,7 @@
                             <height>32</height>
                             <aspectratio>keep</aspectratio>
                             <visible>String.IsEqual(ListItem.Property(Paired), 1)</visible>
-                            <texture>elec/Favorite.png</texture>
+                            <texture>elec/favorites.png</texture>
                         </control>
                         <!-- Trusted Symbol (bottom right) -->
                         <control type="image">

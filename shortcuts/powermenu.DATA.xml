@@ -85,7 +85,7 @@
         <label2>Power Menu Shortcut</label2>
         <label>$LOCALIZE[31232]</label>
         <action>RebootToAndroid</action>
-        <visible>System.PathExist("/dev/env")</visible>
+        <visible>System.AddonIsEnabled(service.coreelec.settings)</visible>
         <icon />
         <thumb />
     </shortcut>

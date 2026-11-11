@@ -6,9 +6,11 @@
     <onunload>ClearProperty(colorpickerheader,home)</onunload>
     <onunload>ClearProperty(colorstring,home)</onunload>
     <onunload>Skin.Reset(color_prev)</onunload>
+    <onunload>ClearProperty(color_prev,home)</onunload>
     <onunload condition="!String.IsEqual(Window(home).Property(color_check),1)">Skin.Reset(colorpresent)</onunload>
     <onunload condition="String.IsEqual(Window(home).Property(color_check),1)">ClearProperty(color_check,home)</onunload>
     <onload>Skin.Reset(color_prev)</onload>
+    <onload>ClearProperty(color_prev,home)</onload>
 	<controls>
 		<control type="group">
 			<control type="image" description="Background">
@@ -62,7 +64,7 @@
                 <orientation>vertical</orientation>
                 <onleft>3100</onleft>
                 <onback>3100</onback>
-                <onfocus>Skin.SetProperty(color_prev,1,home)</onfocus>
+                <onfocus>SetProperty(color_prev,1,home)</onfocus>
                 <!--<onfocus condition="!String.IsEmpty(Skin.String(color_prev))">Skin.Reset(color_prev)</onfocus>-->
                 <itemlayout height="38" width="41">
                     <control type="image">

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1297">
     <defaultcontrol>9000</defaultcontrol>
-    <onload>SetProperty(Fanart,$INFO[Window(Home).Property(LatestMovie.1.Fanart)],home)</onload>
+    <onload>SetProperty(Fanart,$ESCINFO[Window(Home).Property(LatestMovie.1.Fanart)],home)</onload>
     <onload condition="Skin.HasSetting(BlurEnabled)">RunScript(script.embuary.helper,action=blurimg,file='"$VAR[CustomBlurImage]"',prop=BlurImage)</onload>
     <onload>Skin.Reset(NoBlurFoto)</onload>
     <onunload>ClearProperty(FanartBlur,Home)</onunload>
@@ -278,11 +278,11 @@
                     <textureradiooffnofocus colordiffuse="FFFFFFFF">buttonsdialogs/artworkdownloader.png</textureradiooffnofocus>
                     <textcolor>Dark4</textcolor>
                     <font>Null</font>
-                    <onclick condition="String.IsEmpty(Window(home).Property(Fanart))">SetProperty(Fanart,$INFO[Window(Home).Property(LatestMovie.1.Fanart)])</onclick>
-                    <onclick condition="String.IsEqual(Window(home).Property(Fanart),Window(Home).Property(LatestMovie.1.Fanart))">SetProperty(Fanart,$INFO[Window(Home).Property(LatestMovie.2.Fanart)],home)</onclick>
-                    <onclick condition="String.IsEqual(Window(home).Property(Fanart),Window(Home).Property(LatestMovie.2.Fanart))">SetProperty(Fanart,$INFO[Window(Home).Property(LatestMovie.3.Fanart)],home)</onclick>
-                    <onclick condition="String.IsEqual(Window(home).Property(Fanart),Window(Home).Property(LatestMovie.3.Fanart))">SetProperty(Fanart,$INFO[Window(Home).Property(LatestMovie.4.Fanart)],home)</onclick>
-                    <onclick condition="String.IsEqual(Window(home).Property(Fanart),Window(Home).Property(LatestMovie.4.Fanart))">SetProperty(Fanart,$INFO[Window(Home).Property(LatestMovie.1.Fanart)],home)</onclick>
+                    <onclick condition="String.IsEmpty(Window(home).Property(Fanart))">SetProperty(Fanart,$ESCINFO[Window(Home).Property(LatestMovie.1.Fanart)])</onclick>
+                    <onclick condition="String.IsEqual(Window(home).Property(Fanart),Window(Home).Property(LatestMovie.1.Fanart))">SetProperty(Fanart,$ESCINFO[Window(Home).Property(LatestMovie.2.Fanart)],home)</onclick>
+                    <onclick condition="String.IsEqual(Window(home).Property(Fanart),Window(Home).Property(LatestMovie.2.Fanart))">SetProperty(Fanart,$ESCINFO[Window(Home).Property(LatestMovie.3.Fanart)],home)</onclick>
+                    <onclick condition="String.IsEqual(Window(home).Property(Fanart),Window(Home).Property(LatestMovie.3.Fanart))">SetProperty(Fanart,$ESCINFO[Window(Home).Property(LatestMovie.4.Fanart)],home)</onclick>
+                    <onclick condition="String.IsEqual(Window(home).Property(Fanart),Window(Home).Property(LatestMovie.4.Fanart))">SetProperty(Fanart,$ESCINFO[Window(Home).Property(LatestMovie.1.Fanart)],home)</onclick>
                     <onclick condition="Skin.HasSetting(BlurEnabled)">RunScript(script.embuary.helper,action=blurimg,file='"$VAR[CustomBlurImage]"',prop=BlurImage)</onclick>
                 </control>
                 <control type="radiobutton" id="9202">

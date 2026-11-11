@@ -3,7 +3,7 @@
 
     <include name="DialogVideoInfoWIP">
         <control type="group">
-            <animation type="Conditional" reversible="true" condition="Window.IsVisible(FileBrowser.xml) | Window.IsVisible(DialogProgress.xml) | Window.IsVisible(DialogYesNo.xml) | Window.IsVisible(DialogOK.xml) | Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogButtonMenu.xml)">
+            <animation type="Conditional" reversible="true" condition="Window.IsVisible(FileBrowser.xml) | Window.IsVisible(progressdialog) | Window.IsVisible(yesnodialog) | Window.IsVisible(okdialog) | Window.IsVisible(DialogSelect.xml) | Window.IsVisible(DialogContextMenu.xml) | Window.IsVisible(DialogButtonMenu.xml)">
                 <effect type="zoom" end="95" start="100" time="200" center="auto" tween="quadratic" easing="in"/>
             </animation>
 
@@ -62,9 +62,9 @@
                     <ondown>9000</ondown>
                     <onleft>9000</onleft>
                     <onright>9000</onright>
-                    <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + !String.IsEmpty(ListItem.Trailer)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
+                    <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + !String.IsEmpty(ListItem.Trailer)">PlayMedia($ESCINFO[ListItem.Trailer],1)</onclick>
                     <onclick condition="Skin.HasSetting(Use.IMDB.Trailer)">PlayMedia(plugin://plugin.video.imdb.trailers/?action=play_id&amp;imdb=$INFO[ListItem.IMDBNumber],1)</onclick>
-                    <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + String.IsEmpty(ListItem.Trailer) + System.AddonIsEnabled(script.bingie.helper)">RunScript(script.bingie.helper,action=playtrailer,MODE=windowed,title=$INFO[ListItem.Title],local=true)</onclick>
+                    <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + String.IsEmpty(ListItem.Trailer) + System.AddonIsEnabled(script.bingie.helper)">RunScript(script.bingie.helper,action=playtrailer,MODE=windowed,title=$ESCINFO[ListItem.Title],local=true)</onclick>
                 </control>
 
                 <!-- Control Buttons -->
@@ -911,7 +911,7 @@
                         <param name="animation" value="Animation.cast.test"/>
                         <param name="controlid" value="50"/>
                         <param name="fallbackpicture" value="DefaultActor.png"/>
-                        <param name="onup1" value="RunScript(script.embuary.info,call=person,query=$INFO[Container(50).ListItem.Label])"/>
+                        <param name="onup1" value="RunScript(script.embuary.info,call=person,query=$ESCINFO[Container(50).ListItem.Label])"/>
                         <param name="listleft" value="-840"/>
                         <param name="labeltwovisible" value="true"/>
                         <param name="condition.castfadeout" value="true"/>
@@ -929,7 +929,7 @@
                         <param name="storageicon.backgroundlist" value="false"/>
                         <param name="animation" value="Animation.cast.test"/>
                         <param name="controlid" value="50"/>
-                        <param name="fallbackpicture" value="DefaultMovie.png"/>
+                        <param name="fallbackpicture" value="DefaultVideo.png"/>
                         <param name="listleft" value="-840"/>
                         <param name="labeltwovisible" value="true"/>
                     </include>

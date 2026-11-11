@@ -771,7 +771,7 @@
     </variable>
 
     <variable name="Def_Director_Item">
-        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=movie,query=$INFO[Container(9506).ListItem.Label])</value>
+        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=movie,query=$ESCINFO[Container(9506).ListItem.Label])</value>
         <value>RunScript(script.embuary.info,call=movie,dbid=$INFO[ListItem.DBID])</value>
     </variable>
 
@@ -781,7 +781,7 @@
     </variable>
 
     <variable name="Def_Set_Item">
-        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=movie,query=$INFO[Container(9515).ListItem.Label])</value>
+        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=movie,query=$ESCINFO[Container(9515).ListItem.Label])</value>
         <value>RunScript(script.embuary.info,call=movie,dbid=$INFO[ListItem.DBID])</value>
     </variable>
 
@@ -793,12 +793,12 @@
     </variable>
 
     <variable name="Def_Studio_Item">
-        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=movie,query=$INFO[Container(9503).ListItem.Label])</value>
+        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=movie,query=$ESCINFO[Container(9503).ListItem.Label])</value>
         <value>RunScript(script.embuary.info,call=movie,dbid=$INFO[ListItem.DBID])</value>
     </variable>
 
     <variable name="Def_Studio_Item_TV">
-        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=tv,query=$INFO[Container(9503).ListItem.Label])</value>
+        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=tv,query=$ESCINFO[Container(9503).ListItem.Label])</value>
         <value>RunScript(script.embuary.info,call=tv,dbid=$INFO[ListItem.DBID])</value>
     </variable>
 
@@ -810,12 +810,12 @@
     </variable>
 
     <variable name="Def_Similar_Item">
-        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=movie,query=$INFO[Container(9502).ListItem.Label])</value>
+        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=movie,query=$ESCINFO[Container(9502).ListItem.Label])</value>
         <value>RunScript(script.embuary.info,call=movie,dbid=$INFO[ListItem.DBID])</value>
     </variable>
 
     <variable name="Def_Similar_Item_TV">
-        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=tv,query=$INFO[Container(9502).ListItem.Label])</value>
+        <value condition="!Skin.HasSetting(extended.info.only.local)">RunScript(script.embuary.info,call=tv,query=$ESCINFO[Container(9502).ListItem.Label])</value>
         <value>RunScript(script.embuary.info,call=tv,dbid=$INFO[ListItem.DBID])</value>
     </variable>
 

@@ -20,7 +20,7 @@
                 <ondown>52</ondown>
             </control>
             <control type="list" id="52">
-                <visible>!Window.IsVisible(ProfileSettings.xml)</visible>
+                <visible>!Window.IsVisible(profilesettings)</visible>
                 <posx>635</posx>
                 <posy>360</posy>
                 <width>650</width>

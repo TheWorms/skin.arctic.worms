@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Foundation -->
 <window id="2005">
-    <onunload condition="Skin.HasSetting(home.netflix.autoplay.trailer) + $EXP[TrailerIsPlaying] + String.IsEmpty(Window(home).Property(TrailerPath))">SetProperty(TrailerPath,$INFO[Window(home).Property(TrailerPath2)],home)</onunload>
+    <onunload condition="Skin.HasSetting(home.netflix.autoplay.trailer) + $EXP[TrailerIsPlaying] + String.IsEmpty(Window(home).Property(TrailerPath))">SetProperty(TrailerPath,$ESCINFO[Window(home).Property(TrailerPath2)],home)</onunload>
     <onunload condition="Skin.HasSetting(home.netflix.autoplay.trailer) + $EXP[TrailerIsPlaying]">SetProperty(TrailerIsPlayingFullscreen,1,home)</onunload>
     <onload condition="Skin.HasSetting(osd.info.fullscreen)">SetProperty(osdinfo,1,home)</onload>
     <onunload condition="Skin.HasSetting(osd.info.fullscreen)">ClearProperty(osdinfo,home)</onunload>

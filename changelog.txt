@@ -1,3 +1,13 @@
+[B]3.0.4[/B]
+Fixed colour picker preview, numeric dialog dimming and disabled control colours
+Fixed missing/misnamed textures (CoreELEC/LibreELEC paired icon, resolution fallback, MPAA Australia on case-sensitive systems)
+Fixed stale window names in visibility conditions (progress, yes/no, ok, profile settings, favourites, seekbar)
+Fixed missing fonts in "Default bold (2)" and "AZ Standard bold" font sets
+Fixed missing colour picker heading
+Titles and paths with commas, quotes or backslashes are now passed safely to scripts and PlayMedia
+Reboot to eMMC/NAND entry is visible again on CoreELEC
+Code cleanup
+
 [B]3.0.3[/B]
 Fixed issue with tv show indicators
 

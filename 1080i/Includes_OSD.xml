@@ -1156,7 +1156,7 @@
             <align>right</align>
             <include>DefOSDButtons</include>
             <onclick>Close</onclick>
-            <onclick>RunScript(script.embuary.info,call=tv,query=$INFO[VideoPlayer.TvShowTitle])</onclick>
+            <onclick>RunScript(script.embuary.info,call=tv,query=$ESCINFO[VideoPlayer.TvShowTitle])</onclick>
             <disabledcolor>White12</disabledcolor>
         </control>
     </include>
@@ -1168,7 +1168,7 @@
             <align>right</align>
             <include>DefOSDButtons</include>
             <onclick>Close</onclick>
-            <onclick>RunScript(script.embuary.info,call=movie,query=$INFO[VideoPlayer.Title])</onclick>
+            <onclick>RunScript(script.embuary.info,call=movie,query=$ESCINFO[VideoPlayer.Title])</onclick>
             <disabledcolor>White12</disabledcolor>
         </control>
     </include>
@@ -1313,7 +1313,7 @@
             <align>right</align>
             <include>DefOSDButtonsNewOSD</include>
             <onclick>Close</onclick>
-            <onclick>RunScript(script.embuary.info,call=tv,query=$INFO[VideoPlayer.TvShowTitle])</onclick>
+            <onclick>RunScript(script.embuary.info,call=tv,query=$ESCINFO[VideoPlayer.TvShowTitle])</onclick>
             <disabledcolor>White12</disabledcolor>
             <visible>$EXP[VideoOSDShort]</visible>
             <include>Animation.OSD.Wide.Short</include>
@@ -1325,7 +1325,7 @@
             <width>OSDLabelsWidthWide</width>
             <include>DefOSDButtonsNewOSD</include>
             <onclick>Close</onclick>
-            <onclick>RunScript(script.embuary.info,call=tv,query=$INFO[VideoPlayer.TvShowTitle])</onclick>
+            <onclick>RunScript(script.embuary.info,call=tv,query=$ESCINFO[VideoPlayer.TvShowTitle])</onclick>
             <disabledcolor>White12</disabledcolor>
             <visible>$EXP[VideoOSDWide]</visible>
             <include>Animation.OSD.Wide.Short</include>
@@ -1339,7 +1339,7 @@
             <align>right</align>
             <include>DefOSDButtonsNewOSD</include>
             <onclick>Close</onclick>
-            <onclick>RunScript(script.embuary.info,call=movie,query=$INFO[VideoPlayer.Title])</onclick>
+            <onclick>RunScript(script.embuary.info,call=movie,query=$ESCINFO[VideoPlayer.Title])</onclick>
             <disabledcolor>White12</disabledcolor>
             <visible>$EXP[VideoOSDShort]</visible>
             <include>Animation.OSD.Wide.Short</include>
@@ -1351,7 +1351,7 @@
             <width>OSDLabelsWidthWide</width>
             <include>DefOSDButtonsNewOSD</include>
             <onclick>Close</onclick>
-            <onclick>RunScript(script.embuary.info,call=movie,query=$INFO[VideoPlayer.Title])</onclick>
+            <onclick>RunScript(script.embuary.info,call=movie,query=$ESCINFO[VideoPlayer.Title])</onclick>
             <disabledcolor>White12</disabledcolor>
             <visible>$EXP[VideoOSDWide]</visible>
             <include>Animation.OSD.Wide.Short</include>
@@ -1454,7 +1454,7 @@
             <label/>
             <font />
             <onclick>Close</onclick>
-            <onclick>RunScript(script.embuary.info,call=tv,query=$INFO[VideoPlayer.TvShowTitle])</onclick>
+            <onclick>RunScript(script.embuary.info,call=tv,query=$ESCINFO[VideoPlayer.TvShowTitle])</onclick>
             <disabledcolor>White12</disabledcolor>
             <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/info.png</texturefocus>
             <texturenofocus colordiffuse="Dark1">osd/info.png</texturenofocus>
@@ -1469,7 +1469,7 @@
             <label/>
             <font />
             <onclick>Close</onclick>
-            <onclick>RunScript(script.embuary.info,call=movie,query=$INFO[VideoPlayer.Title])</onclick>
+            <onclick>RunScript(script.embuary.info,call=movie,query=$ESCINFO[VideoPlayer.Title])</onclick>
             <disabledcolor>White12</disabledcolor>
             <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/info.png</texturefocus>
             <texturenofocus colordiffuse="Dark1">osd/info.png</texturenofocus>
@@ -3568,7 +3568,7 @@
                         <top>0</top>
                         <height>270</height>
                         <aspectratio>scale</aspectratio>
-                        <texture fallback="DefaultAddonMusicvVideoInfo.png">$INFO[Player.Art(thumb)]</texture>
+                        <texture fallback="DefaultAddonMusicVideoInfo.png">$INFO[Player.Art(thumb)]</texture>
                         <visible>!VideoPlayer.Content(LiveTV) + [String.IsEmpty(Player.Art(tvshow.poster)) + String.IsEmpty(Player.Art(poster))]</visible>
                     </control>
                     <control type="group">

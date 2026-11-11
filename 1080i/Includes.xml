@@ -387,11 +387,11 @@
         <value condition="String.Contains(ListItem.mpaa,Brazil:14) | String.Contains(ListItem.mpaa,14 anos)">flags/mpaa/mpaa_brazil_14.png</value>
         <value condition="String.Contains(ListItem.mpaa,Brazil:16) | String.Contains(ListItem.mpaa,16 anos)">flags/mpaa/mpaa_brazil_16.png</value>
         <value condition="String.Contains(ListItem.mpaa,Brazil:18) | String.Contains(ListItem.mpaa,18 anos)">flags/mpaa/mpaa_brazil_18.png</value>
-        <value condition="String.Contains(ListItem.MPAA,Australia:R) | String.Contains(ListItem.MPAA,Australia R)">flags/mpaa/australia_R.png</value>
-        <value condition="String.Contains(ListItem.MPAA,Australia:MA) | String.Contains(ListItem.MPAA,Australia MA)">flags/mpaa/australia_MA.png</value>
-        <value condition="String.Contains(ListItem.MPAA,Australia:M) | String.Contains(ListItem.MPAA,Australia M)">flags/mpaa/australia_M.png</value>
-        <value condition="String.Contains(ListItem.MPAA,Australia:PG) | String.Contains(ListItem.MPAA,Australia PG)">flags/mpaa/australia_PG.png</value>
-        <value condition="String.Contains(ListItem.MPAA,Australia:G) | String.Contains(ListItem.MPAA,Australia G)">flags/mpaa/australia_G.png</value>
+        <value condition="String.Contains(ListItem.MPAA,Australia:R) | String.Contains(ListItem.MPAA,Australia R)">flags/mpaa/australia_r.png</value>
+        <value condition="String.Contains(ListItem.MPAA,Australia:MA) | String.Contains(ListItem.MPAA,Australia MA)">flags/mpaa/australia_ma.png</value>
+        <value condition="String.Contains(ListItem.MPAA,Australia:M) | String.Contains(ListItem.MPAA,Australia M)">flags/mpaa/australia_m.png</value>
+        <value condition="String.Contains(ListItem.MPAA,Australia:PG) | String.Contains(ListItem.MPAA,Australia PG)">flags/mpaa/australia_pg.png</value>
+        <value condition="String.Contains(ListItem.MPAA,Australia:G) | String.Contains(ListItem.MPAA,Australia G)">flags/mpaa/australia_g.png</value>
         <value condition="String.Contains(ListItem.mpaa,전체) | String.Contains(ListItem.mpaa,0) | String.Contains(ListItem.mpaa,ALL)">flags/mpaa/kr_certificate_all.png</value>
         <value condition="String.Contains(ListItem.mpaa,12) | String.Contains(ListItem.mpaa,12세)">flags/mpaa/kr_certificate_12.png</value>
         <value condition="String.Contains(ListItem.mpaa,15) | String.Contains(ListItem.mpaa,15세)">flags/mpaa/kr_certificate_15.png</value>
@@ -441,11 +441,11 @@
         <value condition="String.Contains(Container(9500).ListItem.mpaa,Brazil:14) | String.Contains(Container(9500).ListItem.mpaa,14 anos)">flags/mpaa/mpaa_brazil_14.png</value>
         <value condition="String.Contains(Container(9500).ListItem.mpaa,Brazil:16) | String.Contains(Container(9500).ListItem.mpaa,16 anos)">flags/mpaa/mpaa_brazil_16.png</value>
         <value condition="String.Contains(Container(9500).ListItem.mpaa,Brazil:18) | String.Contains(Container(9500).ListItem.mpaa,18 anos)">flags/mpaa/mpaa_brazil_18.png</value>
-        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:R) | String.Contains(Container(9500).ListItem.MPAA,Australia R)">flags/mpaa/australia_R.png</value>
-        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:MA) | String.Contains(Container(9500).ListItem.MPAA,Australia MA)">flags/mpaa/australia_MA.png</value>
-        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:M) | String.Contains(Container(9500).ListItem.MPAA,Australia M)">flags/mpaa/australia_M.png</value>
-        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:PG) | String.Contains(Container(9500).ListItem.MPAA,Australia PG)">flags/mpaa/australia_PG.png</value>
-        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:G) | String.Contains(Container(9500).ListItem.MPAA,Australia G)">flags/mpaa/australia_G.png</value>
+        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:R) | String.Contains(Container(9500).ListItem.MPAA,Australia R)">flags/mpaa/australia_r.png</value>
+        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:MA) | String.Contains(Container(9500).ListItem.MPAA,Australia MA)">flags/mpaa/australia_ma.png</value>
+        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:M) | String.Contains(Container(9500).ListItem.MPAA,Australia M)">flags/mpaa/australia_m.png</value>
+        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:PG) | String.Contains(Container(9500).ListItem.MPAA,Australia PG)">flags/mpaa/australia_pg.png</value>
+        <value condition="String.Contains(Container(9500).ListItem.MPAA,Australia:G) | String.Contains(Container(9500).ListItem.MPAA,Australia G)">flags/mpaa/australia_g.png</value>
         <value condition="String.Contains(Container(9500).ListItem.mpaa,전체) | String.Contains(Container(9500).ListItem.mpaa,0) | String.Contains(Container(9500).ListItem.mpaa,ALL)">flags/mpaa/kr_certificate_all.png</value>
         <value condition="String.Contains(Container(9500).ListItem.mpaa,12) |String.Contains(Container(9500).ListItem.mpaa,12세)">flags/mpaa/kr_certificate_12.png</value>
         <value condition="String.Contains(Container(9500).ListItem.mpaa,15) | String.Contains(Container(9500).ListItem.mpaa,15세)">flags/mpaa/kr_certificate_15.png</value>
@@ -1122,8 +1122,8 @@
         <textureradioonnofocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioonnofocus>
         <textureradioofffocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradioofffocus>
         <textureradiooffnofocus colordiffuse="FFFFFFFF">$PARAM[icon]</textureradiooffnofocus>
-        <textureradiooffdisabled colordiffuse="disabled">$PARAM[icon]</textureradiooffdisabled>
-        <textureradioondisabled colordiffuse="disabled">$PARAM[icon]</textureradioondisabled>
+        <textureradiooffdisabled colordiffuse="Black12">$PARAM[icon]</textureradiooffdisabled>
+        <textureradioondisabled colordiffuse="Black12">$PARAM[icon]</textureradioondisabled>
     </include>
 
     <include name="buttondimensionskeyboard">
@@ -1605,7 +1605,7 @@
                 <onfocus>ClearProperty(musiccontent)</onfocus>
                 <onfocus>ClearProperty(ShowDisc)</onfocus>
                 <onfocus>ClearProperty(RotateCover)</onfocus>
-                <onclick condition="String.IsEmpty(ListItem.DBID)">PlayMedia($INFO[ListItem.FilenameAndPath])</onclick>
+                <onclick condition="String.IsEmpty(ListItem.DBID)">PlayMedia($ESCINFO[ListItem.FilenameAndPath])</onclick>
                 <onclick condition="System.HasAddon(script.playalbum) + String.IsEqual(ListItem.DBType,song) + !String.IsEmpty(ListItem.DBID)">RunScript(script.playalbum,songid=$INFO[ListItem.DBID])</onclick>
                 <onclick condition="System.HasAddon(script.playalbum) + String.IsEqual(ListItem.DBType,album) + !String.IsEmpty(ListItem.DBID)">RunScript(script.playalbum,albumid=$INFO[ListItem.DBID])</onclick>
                 <onclick condition="!System.HasAddon(script.playalbum) + !String.IsEmpty(ListItem.DBID)">InstallAddon(script.playalbum)</onclick>
@@ -1845,8 +1845,8 @@
                 <visible>String.IsEqual(ListItem.DBType,movie) | String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)</visible>
                 <onfocus condition="!String.IsEqual(Window.Property(moviecontent),1)">ClearProperty(moviecontent)</onfocus>
                 <onfocus>SetProperty(moviecontent,1)</onfocus>
-                <onclick condition="String.IsEqual(ListItem.DBType,movie)">RunScript(script.embuary.info,call=movie,query=$INFO[ListItem.Title])</onclick>
-                <onclick condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)">RunScript(script.embuary.info,call=tv,query=$INFO[ListItem.TvShowTitle])</onclick>
+                <onclick condition="String.IsEqual(ListItem.DBType,movie)">RunScript(script.embuary.info,call=movie,query=$ESCINFO[ListItem.Title])</onclick>
+                <onclick condition="String.IsEqual(ListItem.DBType,tvshow) | String.IsEqual(ListItem.DBType,episode)">RunScript(script.embuary.info,call=tv,query=$ESCINFO[ListItem.TvShowTitle])</onclick>
                 <include>buttondimensions</include>
                 <include content="buttontextures">
                     <param name="icon" value="buttonsdialogs/info.png"/>
@@ -1864,7 +1864,7 @@
                 <visible>!Skin.HasSetting(PlayTrailerWindowed) + [[Skin.HasSetting(Use.IMDB.Trailer) + System.AddonIsEnabled(plugin.video.imdb.trailers) + !String.IsEmpty(ListItem.IMDBNumber)] | [!Skin.HasSetting(Use.IMDB.Trailer) + String.IsEmpty(ListItem.Trailer) + System.AddonIsEnabled(script.bingie.helper)] | [!Skin.HasSetting(Use.IMDB.Trailer) + !String.IsEmpty(ListItem.Trailer)]]</visible>                
                 <onclick condition="Skin.HasSetting(Use.IMDB.Trailer) | String.IsEmpty(ListItem.Trailer)">Dialog.Close(2003)</onclick>                
                 <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + !String.IsEmpty(ListItem.Trailer)">SendClick(11)</onclick>
-                <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + String.IsEmpty(ListItem.Trailer) + System.AddonIsEnabled(script.bingie.helper)">RunScript(script.bingie.helper,action=playtrailer,MODE=fullscreen,title=$INFO[ListItem.Title],local=true)</onclick>
+                <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + String.IsEmpty(ListItem.Trailer) + System.AddonIsEnabled(script.bingie.helper)">RunScript(script.bingie.helper,action=playtrailer,MODE=fullscreen,title=$ESCINFO[ListItem.Title],local=true)</onclick>
                 <onclick condition="Skin.HasSetting(Use.IMDB.Trailer)">PlayMedia(plugin://plugin.video.imdb.trailers/?action=play_id&amp;imdb=$INFO[ListItem.IMDBNumber])</onclick>                
                 <visible>!Skin.HasSetting(hidebutton.video.trailer)</visible>
             </control>
@@ -1879,8 +1879,8 @@
                     <param name="icon" value="buttonsdialogs/trailer.png"/>
                 </include>
                 <visible>Skin.HasSetting(PlayTrailerWindowed) + [[Skin.HasSetting(Use.IMDB.Trailer) + System.AddonIsEnabled(plugin.video.imdb.trailers) + !String.IsEmpty(ListItem.IMDBNumber)] | [!Skin.HasSetting(Use.IMDB.Trailer) + String.IsEmpty(ListItem.Trailer) + System.AddonIsEnabled(script.bingie.helper)] | [!Skin.HasSetting(Use.IMDB.Trailer) + !String.IsEmpty(ListItem.Trailer)]]</visible>
-                <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + !String.IsEmpty(ListItem.Trailer)">PlayMedia($INFO[ListItem.Trailer],1)</onclick>
-                <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + String.IsEmpty(ListItem.Trailer) + System.AddonIsEnabled(script.bingie.helper)">RunScript(script.bingie.helper,action=playtrailer,MODE=windowed,title=$INFO[ListItem.Title],local=true)</onclick>
+                <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + !String.IsEmpty(ListItem.Trailer)">PlayMedia($ESCINFO[ListItem.Trailer],1)</onclick>
+                <onclick condition="!Skin.HasSetting(Use.IMDB.Trailer) + String.IsEmpty(ListItem.Trailer) + System.AddonIsEnabled(script.bingie.helper)">RunScript(script.bingie.helper,action=playtrailer,MODE=windowed,title=$ESCINFO[ListItem.Title],local=true)</onclick>
                 <onclick condition="Skin.HasSetting(Use.IMDB.Trailer)">PlayMedia(plugin://plugin.video.imdb.trailers/?action=play_id&amp;imdb=$INFO[ListItem.IMDBNumber],1)</onclick>
                 <visible>!Skin.HasSetting(hidebutton.video.trailer)</visible>
             </control>
@@ -2113,7 +2113,7 @@
             <control type="radiobutton" id="8">
                 <onfocus>ClearProperty(videoinfo)</onfocus>
                 <visible>[!String.IsEmpty(Container(10051).ListItem.DBID) + !String.IsEmpty(Container(10051).ListItem.Property(file)) + !String.IsEqual(Container(10051).ListItem.Property(call),tv)] | [!String.IsEmpty(Container(10051).ListItem.DBID) + String.IsEqual(Container(10051).ListItem.Property(call),tv)] | [Skin.HasSetting(extended.info.override.play)]</visible>
-                <onclick condition="[!String.IsEmpty(Container(10051).ListItem.DBID) + !String.IsEmpty(Container(10051).ListItem.Property(file)) + !String.IsEqual(Container(10051).ListItem.Property(call),tv)] + !Skin.HasSetting(extended.info.override.play)">PlayMedia($INFO[Container(10051).ListItem.Property(file)])</onclick>
+                <onclick condition="[!String.IsEmpty(Container(10051).ListItem.DBID) + !String.IsEmpty(Container(10051).ListItem.Property(file)) + !String.IsEqual(Container(10051).ListItem.Property(call),tv)] + !Skin.HasSetting(extended.info.override.play)">PlayMedia($ESCINFO[Container(10051).ListItem.Property(file)])</onclick>
                 <onclick condition="!Window.IsVisible(MyVideoNav.xml) + [!String.IsEmpty(Container(10051).ListItem.DBID) + String.IsEqual(Container(10051).ListItem.Property(call),tv)] + !Skin.HasSetting(extended.info.override.play)">ActivateWindow(videos,videodb://tvshows/titles/$INFO[Container(10051).ListItem.DBID]/,return)</onclick>
                 <onclick condition="Window.IsVisible(MyVideoNav.xml) + [!String.IsEmpty(Container(10051).ListItem.DBID) + String.IsEqual(Container(10051).ListItem.Property(call),tv)] + !Skin.HasSetting(extended.info.override.play)">Container.Update(videodb://tvshows/titles/$INFO[Container(10051).ListItem.DBID]/)</onclick>
                 <onclick condition="!String.IsEmpty(Container(90051).ListItem.Property(TMDb_ID)) + Skin.HasSetting(extended.info.override.play)">RunPlugin(plugin://plugin.video.themoviedb.helper?info=play&amp;tmdb_id=$INFO[Container(90051).ListItem.Property(TMDb_ID)]&amp;type=movie)</onclick>
@@ -3231,7 +3231,7 @@
         <control type="button">
             <visible>false</visible>
             <onfocus>$VAR[SetTMDBHelperWidgetContainer]</onfocus>
-            <onfocus>SetProperty(WindowTitle,$INFO[Container(300).ListItem.Label],home)</onfocus>
+            <onfocus>SetProperty(WindowTitle,$ESCINFO[Container(300).ListItem.Label],home)</onfocus>
         </control>
     </include>
 
@@ -3247,7 +3247,7 @@
             <visible>false</visible>
 
             <!-- Set Property / Skin String -->
-            <onfocus>SetProperty(listitem.trailer,$INFO[ListItem.Trailer],home)</onfocus>
+            <onfocus>SetProperty(listitem.trailer,$ESCINFO[ListItem.Trailer],home)</onfocus>
 
             <!-- Reset / Stop On Unfocus -->
             <onunfocus condition="String.IsEmpty(Window(home).Property(TrailerIsPlayingFullscreen))">ClearProperty(TrailerPath,home)</onunfocus>

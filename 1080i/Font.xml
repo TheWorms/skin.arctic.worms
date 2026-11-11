@@ -1419,6 +1419,27 @@
             <size>26</size>
             <style>bold</style>
         </font>
+        <font>
+            <name>ChannelInfo</name>
+            <filename>MC360.ttf</filename>
+            <size>27</size>
+        </font>
+        <font>
+            <name>ChannelTiny</name>
+            <filename>MC360.ttf</filename>
+            <size>22</size>
+        </font>
+        <font>
+            <name>Medium2x</name>
+            <filename>MC360.ttf</filename>
+            <style>bold</style>
+            <size>38</size>
+        </font>
+        <font>
+            <name>Tiny44</name>
+            <filename>MC360.ttf</filename>
+            <size>21</size>
+        </font>
     </fontset>
     <fontset id="CJK - Spoqa + Inter" unicode="true">
         <font>
@@ -3809,6 +3830,27 @@
             <filename>RobotoCondensed-Regular.ttf</filename>
             <size>26</size>
             <style>bold</style>
+        </font>
+        <font>
+            <name>ChannelInfo</name>
+            <filename>RobotoCondensed-Regular.ttf</filename>
+            <size>27</size>
+        </font>
+        <font>
+            <name>ChannelTiny</name>
+            <filename>RobotoCondensed-Regular.ttf</filename>
+            <size>22</size>
+        </font>
+        <font>
+            <name>Medium2x</name>
+            <filename>RobotoCondensed-Regular.ttf</filename>
+            <style>bold</style>
+            <size>38</size>
+        </font>
+        <font>
+            <name>Tiny44</name>
+            <filename>RobotoCondensed-Regular.ttf</filename>
+            <size>21</size>
         </font>
     </fontset>
     <fontset id="Segoe Light" unicode="true">

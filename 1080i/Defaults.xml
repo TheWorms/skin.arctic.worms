@@ -86,7 +86,7 @@
         <colorwidth>96</colorwidth>
 		<colorheight>30</colorheight>
 		<texturecolormask>common/white.png</texturecolormask>
-		<texturecolordisabledmask colordiffuse="disabled">common/white.png</texturecolordisabledmask>
+		<texturecolordisabledmask colordiffuse="Black12">common/white.png</texturecolordisabledmask>
         <textoffsetx>30</textoffsetx>
         <textcolor>Black70</textcolor>
         <focusedcolor>Selected</focusedcolor>
