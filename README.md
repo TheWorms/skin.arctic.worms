@@ -7,7 +7,7 @@
 # Arctic: Worms
 
 <!-- version:auto -->
-**Version : 1.0.0**
+**Version : 1.0.1**
 <!-- /version:auto -->
 
 Skin Kodi dérivé d'**Arctic: Zephyr - Reloaded** (beatmasterRS, d'après l'Arctic:
