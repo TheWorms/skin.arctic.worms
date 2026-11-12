@@ -1852,10 +1852,11 @@
         </item>
         <item>
             <label>$LOCALIZE[154]</label>
-            <label2>$INFO[System.UsedSpacePercent]</label2>
+            <label2>$VAR[StorageUsedPercentLabel]</label2>
             <icon>special://skin/extras/icons/storageinfo.png</icon>
-            <property name="Label3">$INFO[System.TotalSpace]</property>
+            <property name="Label3">$VAR[StorageTotalLabel]</property>
             <property name="Label4">storage</property>
+            <property name="StoragePercent">$INFO[Window(Home).Property(DiskInfo.UsedPercent)]</property>
             <onclick>ActivateWindowAndFocus(systeminfo,94,0)</onclick>
         </item>
         <item>

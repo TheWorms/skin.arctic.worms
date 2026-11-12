@@ -1,3 +1,8 @@
+1.0.0 (Arctic: Worms)
+- Fork of Arctic: Zephyr - Reloaded 3.0.3 by beatmasterRS, renamed skin.arctic.worms (the entries below are the history of skin.arctic.zephyr.mod)
+- Storage info (home system widget, settings header) shows the data partition published by service.worms.diskinfo when it is installed; without it the Kodi value is kept
+- Includes 3.0.4 and 3.0.5 below
+
 [B]3.0.5[/B]
 Add-on windows: added the default skin font names (font10, font12, font14, font27, fontNN_title...) to every font set, they all fell back to font13
 Add-on windows: added the default skin colour names (button_focus...) and plain colour textures (colors/white.png...)

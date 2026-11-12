@@ -4303,7 +4303,17 @@
             <info>System.UsedSpace</info>
             <include>DefSettingsButton</include>
             <animation effect="rotate" condition="true" start="360" end="90" loop="false" time="0" center="auto">Conditional</animation>
-            <visible>String.IsEqual(ListItem.Property(Label4),storage)</visible>
+            <visible>String.IsEqual(ListItem.Property(Label4),storage) + String.IsEmpty(Window(Home).Property(DiskInfo.UsedPercent))</visible>
+        </control>
+        <control type="progress">
+            <height>10</height>
+            <width>80</width>
+            <bottom>80</bottom>
+            <left>10</left>
+            <info>ListItem.Property(StoragePercent)</info>
+            <include>DefSettingsButton</include>
+            <animation effect="rotate" condition="true" start="360" end="90" loop="false" time="0" center="auto">Conditional</animation>
+            <visible>String.IsEqual(ListItem.Property(Label4),storage) + !String.IsEmpty(Window(Home).Property(DiskInfo.UsedPercent))</visible>
         </control>
         <control type="image">
             <left>10</left>
