@@ -741,12 +741,17 @@
     </include>
 
     <variable name="ContentMusicYoutube">
+        <value condition="System.AddonIsEnabled(plugin.video.wtube) + Container.Content(artists) + String.IsEqual(Window.Property(musicyoutube),1)">plugin://plugin.video.wtube/?action=w_search&amp;q=$INFO[ListItem.Artist]</value>
+        <value condition="System.AddonIsEnabled(plugin.video.wtube) + Container.Content(albums) + String.IsEqual(Window.Property(musicyoutube),1)">plugin://plugin.video.wtube/?action=w_search&amp;q=$INFO[ListItem.Artist] $INFO[ListItem.Album] Album</value>
+        <value condition="System.AddonIsEnabled(plugin.video.wtube) + Container.Content(songs) + String.IsEqual(Window.Property(musicyoutube),1)">plugin://plugin.video.wtube/?action=w_search&amp;q=$INFO[ListItem.Artist] $INFO[ListItem.Title]</value>
         <value condition="Container.Content(artists) + String.IsEqual(Window.Property(musicyoutube),1)">plugin://plugin.video.youtube/search/?q=$INFO[ListItem.Artist]</value>
         <value condition="Container.Content(albums) + String.IsEqual(Window.Property(musicyoutube),1)">plugin://plugin.video.youtube/search/?q=$INFO[ListItem.Artist] $INFO[ListItem.Album] Album</value>
         <value condition="Container.Content(songs) + String.IsEqual(Window.Property(musicyoutube),1)">plugin://plugin.video.youtube/search/?q=$INFO[ListItem.Artist] $INFO[ListItem.Title]</value>
     </variable>
 
     <variable name="ContentVideoYoutube">
+        <value condition="System.AddonIsEnabled(plugin.video.wtube) + String.IsEqual(Window.Property(videoyoutube),1)">plugin://plugin.video.wtube/?action=w_search&amp;q=$INFO[ListItem.Label]</value>
+        <value condition="System.AddonIsEnabled(plugin.video.wtube) + String.IsEqual(Window.Property(actinfo),5)">plugin://plugin.video.wtube/?action=w_search&amp;q=$INFO[Container(10051).ListItem.Label]</value>
         <value condition="String.IsEqual(Window.Property(videoyoutube),1)">plugin://plugin.video.youtube/search/?q=$INFO[ListItem.Label]</value>
         <value condition="String.IsEqual(Window.Property(actinfo),5)">plugin://plugin.video.youtube/search/?q=$INFO[Container(10051).ListItem.Label]</value>
     </variable>

@@ -1597,7 +1597,7 @@
             <property name="FanartTexture">$INFO[Skin.String(weather.icons.path),,/]$INFO[Window(Weather).Property(Daily.8.FanartCode),,.png]</property>
             <property name="AnimatedFanartImagepath">$INFO[Skin.String(weather.icons.path),,/]$INFO[Window(Weather).Property(Daily.8.FanartCode)]/</property>
             <property name="OutlookTexture">resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.8.FanartCode),,.png]</property>
-            <property name="FanartCode">$INFO[Window(Weather).Property(Daily8.FanartCode)]</property>
+            <property name="FanartCode">$INFO[Window(Weather).Property(Daily.8.FanartCode)]</property>
             <visible>[String.IsEqual(Container(300).ListItem.Property(widgetaspect),Poster) | String.IsEmpty(Container(300).ListItem.Property(widgetaspect)) | String.IsEqual(Container(300).ListItem.Property(widgetaspect),Fanart) | String.IsEqual(Container(300).ListItem.Property(widgetaspect),Thumbnail)] + !String.IsEmpty(Window(Weather).Property(Daily.8.LongDay))</visible>
             <onclick>ActivateWindow(Weather)</onclick>
             <onclick>SetFocus(9100,0,absolute)</onclick>
@@ -1610,7 +1610,7 @@
             <property name="FanartTexture">$INFO[Skin.String(weather.icons.path),,/]$INFO[Window(Weather).Property(Daily.9.FanartCode),,.png]</property>
             <property name="OutlookTexture">resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.9.FanartCode),,.png]</property>
             <property name="AnimatedFanartImagepath">$INFO[Skin.String(weather.icons.path),,/]$INFO[Window(Weather).Property(Daily.9.FanartCode)]/</property>
-            <property name="FanartCode">$INFO[Window(Weather).Property(Daily9.FanartCode)]</property>
+            <property name="FanartCode">$INFO[Window(Weather).Property(Daily.9.FanartCode)]</property>
             <visible>[String.IsEqual(Container(300).ListItem.Property(widgetaspect),Poster) | String.IsEmpty(Container(300).ListItem.Property(widgetaspect)) | String.IsEqual(Container(300).ListItem.Property(widgetaspect),Fanart) | String.IsEqual(Container(300).ListItem.Property(widgetaspect),Thumbnail)] + !String.IsEmpty(Window(Weather).Property(Daily.9.LongDay))</visible>
             <onclick>ActivateWindow(Weather)</onclick>
             <onclick>SetFocus(9100,0,absolute)</onclick>
@@ -1623,7 +1623,7 @@
             <property name="FanartTexture">$INFO[Skin.String(weather.icons.path),,/]$INFO[Window(Weather).Property(Daily.10.FanartCode),,.png]</property>
             <property name="OutlookTexture">resource://resource.images.weathericons.default/$INFO[Window(Weather).Property(Daily.10.FanartCode),,.png]</property>
             <property name="AnimatedFanartImagepath">$INFO[Skin.String(weather.icons.path),,/]$INFO[Window(Weather).Property(Daily.10.FanartCode)]/</property>
-            <property name="FanartCode">$INFO[Window(Weather).Property(Daily10.FanartCode)]</property>
+            <property name="FanartCode">$INFO[Window(Weather).Property(Daily.10.FanartCode)]</property>
             <visible>[String.IsEqual(Container(300).ListItem.Property(widgetaspect),Poster) | String.IsEmpty(Container(300).ListItem.Property(widgetaspect)) | String.IsEqual(Container(300).ListItem.Property(widgetaspect),Fanart) | String.IsEqual(Container(300).ListItem.Property(widgetaspect),Thumbnail)] + !String.IsEmpty(Window(Weather).Property(Daily.10.LongDay))</visible>
             <onclick>ActivateWindow(Weather)</onclick>
             <onclick>SetFocus(9100,0,absolute)</onclick>

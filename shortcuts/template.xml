@@ -192,6 +192,14 @@
             <include>SystemInfoItems</include>
         </controls>
     </other>
+<!-- ProtonVPN:BEGIN -->
+    <other include="ProtonVPNInfoContent">
+        <controls>
+            <include>ProtonVPNInfoItems</include>
+        </controls>
+    </other>
+<!-- ProtonVPN:END -->
+
     
     <!-- Widget items for settings -->
     <other include="SettingsInfoContent">

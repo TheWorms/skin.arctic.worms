@@ -427,7 +427,7 @@
                 <height>24</height>
                 <font>Tiny</font>
                 <textcolor>Dark1</textcolor>
-                <label>$INFO[Weather.Temperature], $INFO[Window(Weather).Property(Current.FeelsLike),$LOCALIZE[402] ,°]</label>
+                <label>$INFO[Weather.Temperature]$INFO[Window(Weather).Property(Current.FeelsLike),$COMMA $LOCALIZE[402] ,°]</label>
             </control>
             <control type="label">
                 <left>104</left>
@@ -4058,7 +4058,14 @@
             <param name="top" value="-427" />
         </include>
         <left>SidePad</left>
-        <include condition="!$PARAM[issettingslayout]">InfoSubWidgetSystemInclude</include>
+        <control type="group">
+            <visible>!String.IsEqual(Container(300).ListItem.Property(widget),protonvpninfo)</visible>
+            <include condition="!$PARAM[issettingslayout]">InfoSubWidgetSystemInclude</include>
+        </control>
+        <control type="group">
+            <visible>String.IsEqual(Container(300).ListItem.Property(widget),protonvpninfo)</visible>
+            <include>ProtonVPNDetailInclude</include>
+        </control>
         <include condition="$PARAM[issettingslayout]" content="InfoSubWidgetSettingsInclude">
             <param name="id" value="$PARAM[id]"/>
         </include>

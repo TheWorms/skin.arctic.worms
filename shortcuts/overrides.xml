@@ -901,6 +901,10 @@
         </node>
         <node label="$LOCALIZE[130]">
             <shortcut widget="systeminfo" type="31452" label="$LOCALIZE[130]" icon="special://skin/extras/icons/sysinfo.png" widgetType="system" widgetTarget="system">$INCLUDE[skinshortcuts-template-SystemInfoContent]</shortcut>
+
+            <!-- ProtonVPN:BEGIN -->
+            <shortcut widget="protonvpninfo" type="ProtonVPN" label="ProtonVPN" icon="special://skin/extras/icons/sysinfo.png" condition="System.AddonIsEnabled(service.protonvpn.manager)" widgetType="system" widgetTarget="system">$INCLUDE[skinshortcuts-template-ProtonVPNInfoContent]</shortcut>
+            <!-- ProtonVPN:END -->
         </node>
         <node label="$LOCALIZE[5]">
             <shortcut widget="settings" type="31452" label="$LOCALIZE[5]" icon="special://skin/extras/icons/sysinfo.png" widgetType="system" widgetTarget="system">$INCLUDE[skinshortcuts-template-SettingsInfoContent]</shortcut>

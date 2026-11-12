@@ -1,3 +1,10 @@
+[B]3.0.5[/B]
+Add-on windows: added the default skin font names (font10, font12, font14, font27, fontNN_title...) to every font set, they all fell back to font13
+Add-on windows: added the default skin colour names (button_focus...) and plain colour textures (colors/white.png...)
+ProtonVPN home widget (service.protonvpn.manager) is now built in, a skin update no longer removes it
+YouTube lists in the info dialogs and the YouTube list layout also work with Wtube (plugin.video.wtube)
+Weather: fixed the icon of days 8-10 in the daily widget, no dangling "Feels like" when the provider does not send it
+
 [B]3.0.4[/B]
 Fixed colour picker preview, numeric dialog dimming and disabled control colours
 Fixed missing/misnamed textures (CoreELEC/LibreELEC paired icon, resolution fallback, MPAA Australia on case-sensitive systems)
