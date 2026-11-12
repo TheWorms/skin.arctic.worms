@@ -168,7 +168,7 @@
                     <pagecontrol>1645</pagecontrol>
                     <viewtype label="536">icon</viewtype>
                     <preloaditems>4</preloaditems>
-                    <oninfo condition="Container.Content(actors)">RunScript(script.embuary.info,call=person,query='"$INFO[ListItem.Label]"')</oninfo>
+                    <oninfo condition="Container.Content(actors)">RunScript(script.embuary.info,call=person,query=$ESCINFO[ListItem.Label])</oninfo>
                     <onfocus condition="String.IsEmpty(Window(home).Property(GlobalSearchWindowOpen))">SetFocus(9000)</onfocus>
                     <onfocus condition="String.IsEmpty(Window(home).Property(GlobalSearchWindowOpen))">DOWN</onfocus>
                     <onfocus condition="String.IsEmpty(Window(home).Property(GlobalSearchWindowOpen))">UP</onfocus>

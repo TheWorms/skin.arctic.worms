@@ -9,7 +9,7 @@
             <include>ViewSlideForJumpBar</include>
             <control type="group">
                 <control type="panel" id="500">
-                    <oninfo condition="Container.Content(actors)">RunScript(script.embuary.info,call=person,query='"$INFO[ListItem.Label]"')</oninfo>
+                    <oninfo condition="Container.Content(actors)">RunScript(script.embuary.info,call=person,query=$ESCINFO[ListItem.Label])</oninfo>
                     <top>206</top>
                     <left>70</left>
                     <width>1800</width>

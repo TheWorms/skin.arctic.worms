@@ -10,7 +10,7 @@
             <include>ViewSlideForJumpBar</include>
             <control type="group">
                 <control type="panel" id="58">
-                    <oninfo condition="Container.Content(actors)">RunScript(script.embuary.info,call=person,query='"$INFO[ListItem.Label]"')</oninfo>
+                    <oninfo condition="Container.Content(actors)">RunScript(script.embuary.info,call=person,query=$ESCINFO[ListItem.Label])</oninfo>
                     <visible>$EXP[InGameMode] | Container.Content(musicvideos) | Container.Content(movies) | Container.Content(tvshows) | [Container.Content(episodes) + !String.Contains(Container.FolderPath,plugin://,left)] | Container.Content(actors) | Container.Content(sets) | Container.Content(videos) | Container.Content(seasons)</visible>
                     <top>206</top>
                     <height>660</height>
