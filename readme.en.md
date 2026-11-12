@@ -15,7 +15,7 @@ jurialmunkey's Arctic: Zephyr), tuned for the add-ons of the **TheWorms**
 repository: fonts and colours expected by add-on windows, built-in ProtonVPN
 widget, Wtube instead of YouTube, and the real `/storage` disk usage on CoreELEC.
 
-Built for **Kodi 21 "Omega"** (tested on CoreELEC 21.3, ODROID-N2+).
+Built for **Kodi 21 "Omega"**; works on every Kodi platform.
 
 - **Repository**: `github.com/TheWorms/skin.arctic.worms`
 - **Kodi id**: `skin.arctic.worms`
@@ -62,7 +62,7 @@ Full details: `changelog.txt`.
    `https://raw.githubusercontent.com/TheWorms/kodi-repo/main/zips/repository.theworms/repository.theworms.zip`
 2. Add-ons → **Install from repository** → *TheWorms Repository* → *Look and feel*
    → *Skin* → **Arctic: Worms** → Install, then accept switching to this skin.
-3. Optional: *Services* → **Worms Disk Info**, for the `/storage` disk usage.
+3. Optional: *Services* → **Disk Info**, for the `/storage` disk usage.
 
 Dependencies (`script.skinshortcuts`, `script.embuary.helper`,
 `plugin.video.themoviedb.helper`…) are installed automatically from the official
