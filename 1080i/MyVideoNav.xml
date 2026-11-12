@@ -765,5 +765,18 @@
                 <include>ControlButtons</include>
             </control>
         </control>
+        <!-- Arctic: Worms 1.0.1 : liste EmbyCon en cours de chargement.
+             Ouverte depuis l'accueil, la fenetre Videos s'affiche vide (0 element)
+             pendant que Kodi interroge l'extension : on voyait l'explorateur nu
+             environ une seconde. Ce fond la couvre des la premiere image et
+             disparait des que la liste arrive. Une liste vide ne reste pas
+             couverte : EmbyCon y declare toujours un type de contenu, et
+             Container.Content n'est vide que pendant le chargement. -->
+        <control type="image">
+            <description>EmbyCon : chargement de la liste</description>
+            <include>Dimensions_Fullscreen</include>
+            <texture colordiffuse="Background">common/bg.jpg</texture>
+            <visible>String.StartsWith(Container.FolderPath,plugin://plugin.video.embycon) + Integer.IsEqual(Container.NumItems,0) + String.IsEmpty(Container.Content)</visible>
+        </control>
     </controls>
 </window>
